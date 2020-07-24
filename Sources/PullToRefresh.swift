@@ -73,6 +73,7 @@ private struct PullToRefresh: UIViewRepresentable {
             }
             
             let refreshControl = UIRefreshControl()
+            refreshControl.tintColor = .white
             refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.onValueChanged), for: .valueChanged)
             tableView.refreshControl = refreshControl
         }
